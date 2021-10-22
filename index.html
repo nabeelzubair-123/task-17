@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>QUESTION 17</title>
+</head>
+<body>
+<script>
+function all_max(nums) 
+ {
+    var max_val = nums[0] > nums[2] ? nums[0] : nums[2];
+
+    nums[0] = max_val;
+    nums[1] = max_val;
+    nums[2] = max_val;
+
+    return nums;
+}
+document.write(all_max([20, 30, 30]) + "<br>");
+document.write(all_max([-7, -9, 2]) + "<br>");
+document.write(all_max([13, 10, 3]));
+
+</script>
+</body>
+</html>
